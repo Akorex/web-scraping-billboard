@@ -2,12 +2,12 @@
 This is a python web scraping project which saves the billboard Hot 100 as a file.
 It also prints the chart history of artists
 """
-
+# import the necessary libraries
 from bs4 import BeautifulSoup
 import requests
 import sys
 
-
+# creating the function which collects info from the charts
 def hot_100():
     url = "https://www.billboard.com/charts/hot-100"
     bill = requests.get(url).text
